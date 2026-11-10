@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SIMTANI - Manajemen Tanaman & Pertanian</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="login" class="login">
+  <form id="formLogin" class="box-login">
+    <h1>🌾 SIMTANI</h1>
+    <p class="kecil">Masuk untuk melanjutkan</p>
+    <input name="username" placeholder="Username" required>
+    <input name="password" type="password" placeholder="Password" required>
+    <button>Masuk</button>
+    <div id="loginErr" class="err"></div>
+    <p class="kecil tengah"><a href="#" onclick="openDaftar();return false">Daftar akun pegawai</a> · <a href="#" onclick="openLupa();return false">Lupa sandi?</a></p>
+  </form>
+</section>
+
+<div id="app" class="hidden">
+  <aside class="sidebar">
+    <div class="brand">🌾 SIMTANI</div>
+    <nav id="menu"></nav>
+    <button id="btnLogout" class="logout">⏻ Keluar</button>
+  </aside>
+  <main id="main"></main>
+</div>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-box">
+    <h3 id="mTitle"></h3>
+    <form id="mForm"></form>
+  </div>
+</div>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
